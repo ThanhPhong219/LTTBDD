@@ -112,4 +112,16 @@ void main(){
         default: 
             print("Toan tu khong hop le");
   }
+  //Câu 9
+  void main() {
+    for(int i=1;i<=100;i++){
+      if(i==41){
+        continue;
+        }
+   else{
+     print(i);
+       }
+  }
+}
+  
 }
