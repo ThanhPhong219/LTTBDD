@@ -80,6 +80,7 @@ void main(){
       print("$i * $j = $giatri");
     }
   }
+  
   //Câu 8
   print("Nhập số thứ nhất : ");
   int abc = int.parse(stdin.readLineSync()!);
@@ -93,25 +94,29 @@ void main(){
   {
         case '+': 
             kq = abc + bcd;
+            print("$abc + $bcd = $kq");
             break;
         case '-': 
             kq = abc - bcd;
+            print("$abc - $bcd = $kq");
             break;
         case '*': 
             kq = abc * bcd;
+            print("$abc * $bcd = $kq");
             break;
         case '/':
             if (bcd != 0) {
                 kq = abc / bcd ;
+                print("$abc / $bcd = $kq");
             } else {
                 kt = false;
+                print("Mẫu số phải khác 0");
             }
             break;
         default: 
-            print("Toan tu khong hop le");
+            print("Toán tử không hợp lệ");
   }
   //Câu 9
-  void main() {
     for(int i=1;i<=100;i++){
       if(i==41){
         continue;
@@ -119,7 +124,5 @@ void main(){
    else{
      print(i);
        }
-  }
-}
-  
+    }
 }

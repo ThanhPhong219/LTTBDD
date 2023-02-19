@@ -47,9 +47,9 @@ void main() {
     String newstr= str.replaceAll(' ', '');
     print(newstr);
   //Câu 10
-    String a = '10';
-    int cvString = int.parse(a);
-    print("Biến acó kiểu : ${a.runtimeType}");
+    String ab = '10';
+    int cvString = int.parse(ab);
+    print("Biến ab có kiểu : ${ab.runtimeType}");
     print("Biến cvString có kiểu : ${cvString.runtimeType}");
   //Câu 11
     print("Nhập số tiền trên hóa đơn: ");
