@@ -2,7 +2,6 @@ import 'dart:collection';
 import 'dart:io';
 
 void main(){
-  /*
   //Câu 1
   print("Nhập số cần kiểm tra : ");
   int a = int.parse(stdin.readLineSync()!);
@@ -80,7 +79,7 @@ void main(){
       int giatri = i * j;
       print("$i * $j = $giatri");
     }
-  }*/
+  }
   //Câu 8
   print("Nhập số thứ nhất : ");
   int abc = int.parse(stdin.readLineSync()!);
@@ -92,7 +91,7 @@ void main(){
   bool kt;
   switch(pheptinh)
   {
-  case '+': 
+        case '+': 
             kq = abc + bcd;
             break;
         case '-': 
@@ -107,7 +106,6 @@ void main(){
             } else {
                 kt = false;
             }
-             
             break;
         default: 
             print("Toan tu khong hop le");
