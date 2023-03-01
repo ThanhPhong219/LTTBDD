@@ -45,3 +45,4 @@ void cau7(){
         print(n);
       }
 }
+void main(){}
