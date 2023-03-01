@@ -1,22 +1,29 @@
 import 'dart:io';
-void main(){
-  /*File file = File('hello.txt');
-  //Cau1
+void cau1(){
+  File file = File('hello.txt');
   file.writeAsStringSync('Nguyễn Thanh Phong');
-  //Cau2
+}
+void cau2(){
+  File file = File('hello.txt');
   file.writeAsStringSync('\nNam Dương',mode:FileMode.append);
-  //Cau3
+}
+void cau3(){
+  File file = File('hello.txt');
   print("Link truy cập ${file.path} là : ${file.absolute.path}");
-  //Cau4
+}
+void cau4(){
+  File file = File('hello.txt');
   file.copySync('hello_copy.txt');
-  /*Cau 5
+}
+void cau5(){
   for(int i =0;i<100;i++)
-    new File('$i.txt').create(recursive: true);*/
-  //Cau6
-  //File cau6 = File('hello_copy.txt');
-  //cau6.deleteSync();
-  */
-  //Cau 7
+    new File('$i.txt').create(recursive: true);
+}
+void cau6(){
+  File cau6 = File('hello_copy.txt');
+  cau6.deleteSync();
+}
+void cau7(){
   print("Nhập số lượng sinh viên: ");
   File cau7 = File('student.csv');
   cau7.writeAsStringSync('Name,Age,Address\n');
