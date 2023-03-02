@@ -24,11 +24,22 @@ class House {
 }
 void main(){
 
-  Laptop l = Laptop();
-  l.id = "LT1";
-  l.name = "Asus";
-  l.ram = "1TB";
-  l.hien();
+  Laptop l0 = Laptop();
+  l0.id = "LT0";
+  l0.name = "Asus";
+  l0.ram = "1TB";
+  Laptop l1 = Laptop();
+  l1.id = "LT1";
+  l1.name = "Dell";
+  l1.ram = "1TB";
+  Laptop l2 = Laptop();
+  l2.id = "LT2";
+  l2.name = "Mac";
+  l2.ram = "1TB";
+  l0.hien();
+  l1.hien();
+  l2.hien();
+  
 
   House h1 = House("Kiến An","Nhà số 1","Opened");
   House h2 = House("Hải An","Nhà số 2","Closed");
