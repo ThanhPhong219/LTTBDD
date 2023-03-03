@@ -1,29 +1,12 @@
-import 'dart:io';
-
 class Laptop{
-    String? id,name,ram;
-    void hien(){
-        print("Ma may tinh: $id");
-        print("Ten may tinh: $name");
-        print("Ram : $ram");
-}
-}
-class House {
-  String? id,name,prize;
-
-  House(String id, String name,String prize){
-    this.id = id;
-    this.name = name;
-    this.prize = prize;
-  }
+  String? id,name,ram;
   void hien(){
-        print("Địa chỉ: $id");
-        print("Tên nhà: $name");
-        print("Prize : $prize");
+      print("Ma may tinh: $id");
+      print("Ten may tinh: $name");
+      print("Ram : $ram");
 }
 }
-void main(){
-
+void cau1(){
   Laptop l0 = Laptop();
   l0.id = "LT0";
   l0.name = "Asus";
@@ -39,8 +22,21 @@ void main(){
   l0.hien();
   l1.hien();
   l2.hien();
-  
-
+}
+class House {
+  String? id,name,prize;
+  House(String id, String name,String prize){
+    this.id = id;
+    this.name = name;
+    this.prize = prize;
+  }
+  void hien(){
+    print("Địa chỉ: $id");
+    print("Tên nhà: $name");
+    print("Prize : $prize");
+}
+}
+void cau2(){
   House h1 = House("Kiến An","Nhà số 1","Opened");
   House h2 = House("Hải An","Nhà số 2","Closed");
   House h3 = House("Lê Chân","Nhà số 3","Opened");
@@ -53,4 +49,7 @@ void main(){
     print(Houses.name);
     print(Houses.prize);
   }
+}
+void main(){
+  cau1();
 }

@@ -16,6 +16,14 @@ class Animal{
 class Cat extends Animal{
   String? sound;
 }
+void cau4(){
+  var c = Cat();
+  c.id = "C1";
+  c.name = "Mèo Anh";
+  c.color = "Xám";
+  c.sound = "Meow";
+  print("${c.id} ${c.name} ${c.color} ${c.sound}");
+}
 
 class Camera{
   String? _id, _brand, _color, _prize;
@@ -44,17 +52,7 @@ class Camera{
     this._prize = prize;
   }
 }
-
-void main(){
-  
-  cau3();
-  
-  var c = Cat();
-  c.id = "C1";
-  c.name = "Mèo Anh";
-  c.color = "Xám";
-  c.sound = "Meow";
-  print("${c.id} ${c.name} ${c.color} ${c.sound}");
+  void cau5(){
   
   Camera cam = new Camera();
   cam.setID("Cam");
@@ -78,4 +76,7 @@ void main(){
   for(Camera cams in cm){
     print("${cams.getID()},${cams.getBrand()},${cams.getColor()},${cams.getPrize()}");
   } 
+  }
+void main(){
+  cau5();
 }
