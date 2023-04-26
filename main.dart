@@ -1,81 +1,42 @@
 import 'package:flutter/material.dart';
-
-class LoginPage extends StatefulWidget {
-  @override
-  _LoginPageState createState() => new _LoginPageState();
+void main() {
+  runApp(MyApp());
 }
 
-class _LoginPageState extends State<LoginPage> {
+class MyApp extends StatelessWidget{
   @override
-  Widget build(BuildContext context) {
-    final logo = Hero(
-      tag: 'hero',
-      child: CircleAvatar(
-        backgroundColor: Colors.transparent,
-        radius: 48.0,
-        child: Image.asset('assets/lock.png'),
+  Widget build(BuildContext context){
+    return MaterialApp(
+      debugShowCheckedModeBanner : false,
+      home: Scaffold(
+        backgroundColor: Colors.grey[200],
+        appBar: AppBar(
+          toolbarHeight: 70,
+          backgroundColor: Colors.grey[200],
+          elevation: 0,
+          leading : Image.asset("assets/images/hamburger.png"),
+          actions: [
+          Container(
+            decoration: BoxDecoration(
+            color: Colors.white,
+            shape: BoxShape.circle,
+
+            ),
+            margin: EdgeInsets.all(10),
+            child: Image.asset("assets/images/SEARCH.png"),
+          ),
+        ],
       ),
-    );
-
-    final email = TextFormField(
-      keyboardType: TextInputType.emailAddress,
-      autofocus: false,
-      initialValue: '',
-      decoration: InputDecoration(
-        hintText: 'Enter your email...',
-        contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
-      ),
-    );
-
-    final password = TextFormField(
-      autofocus: false,
-      initialValue: '',
-      obscureText: true,
-      decoration: InputDecoration(
-        hintText: 'Enter your password...',
-        contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
-      ),
-    );
-
-    final loginButton = new RaisedButton(
-      child: const Text('Sign In'),
-      textColor: Colors.white,
-      color: Theme.of(context).accentColor,
-      elevation: 10.0,
-      splashColor: Colors.blueGrey,
-      onPressed: () {
-        // Perform some action
-      },
-    );
-
-    final forgotLabel = FlatButton(
-      child: Text(
-        'Forgot password?',
-        style: TextStyle(color: Colors.black54),
-      ),
-      onPressed: () {},
-    );
-
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(
-        child: ListView(
-          shrinkWrap: true,
-          padding: EdgeInsets.only(left: 24.0, right: 24.0),
-          children: <Widget>[
-            logo,
-            SizedBox(height: 45.0),
-            email,
-            SizedBox(height: 10.0),
-            password,
-            SizedBox(height: 15.0),
-            loginButton,
-            forgotLabel
+      body: Column(
+        children :[
+        Row(
+          SizedBox(width:15,),
+          children :[
+          Text("Shop", style : TextStyle(fontSize26),),
+          Text("Application", style : TextStyle(fontSize26),fontWeight:FontWeight.bold),
           ],
-        ),
+      ),],),
       ),
     );
-  }
+}
 }
